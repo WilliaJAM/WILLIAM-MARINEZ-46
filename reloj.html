@@ -4,25 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </head>
     <title>Relojio</title>
 </head>
 <body>
-    <h1>Reloj</h1>
+    <h1 class="container-fluid">Reloj</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <div class="container-fluid" style="background-color: rgba(73, 135, 210, 0.431);">
+          <a class="navbar-brand" href="index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="Calculadora.html">Calculadora</a>
+              <a class="nav-link" href="#">Recibir datos</a>
+              <a class="nav-link" href="reloj.html" >Reloj</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     <fieldset>
-        <legend id="fecha"></legend>
-        <h2 id="reloj"></h2>
-    </fieldset><br>
-    <br>
-    <button onclick="iniciar()">Contador</button>
-    <!-- <button onclick="iniciar2()">Atras</button> -->
-    <!-- <button onclick="deter()">Detener</button> -->
-    <input type="text" id="user" placeholder="Ingresar segundos">
-    <input type="text" id="user2" placeholder="Ingresar segundos">
-
-
-    <h3 id="heading1"></h3>
-      
+        <h2 id="reloj" class="container-fluid"></h2>
+        <legend id="fecha" class="container-fluid"></legend>
+        <h2>___________________________</h2>
+        <h4 class="container">Ingresar segundos para el Contador </h4>
+    </fieldset>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-5">
+                    <div class="input-group input-group-sm mb-3">
+                        <button type="button" class="btn btn-secondary" onclick="iniciar()">Contador</button>
+                    </div>
+              <div class="col-5">
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text">Insert</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Ingresar segundos" id="user2">
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text">Insert</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Ingresar segundos" id="user">
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  <h3 id="heading1" class="container-fluid"></h3>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <script src="reloj.js" ></script>
 </html>
