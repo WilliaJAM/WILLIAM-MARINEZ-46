@@ -1,0 +1,39 @@
+.contenedor {
+    height: 70vh;
+    margin: 5%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#floatingInput1 {
+    height: 40px;
+    width: 300px;
+}
+#floatingPassword2 {
+    height: 40px;
+    width: 300px;
+}
+body {
+    background-image: url('/assets/R.gif');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+footer{
+    text-align: center;
+    color: white;
+    text-justify: auto;
+    height: 10px;
+
+
+}
+#heading {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}

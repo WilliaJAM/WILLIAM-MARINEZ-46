@@ -7,5 +7,3 @@ function enviar() {
     let anyoNacimiento = 2024 - input2;
     alert(`Naciste en el año: ${anyoNacimiento}`);
 }
-
-
