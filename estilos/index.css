@@ -1,16 +1,22 @@
-#cabecera {
-    margin: 8px;
-    background-color:rgb(189, 189, 189); 
-    border-radius: 15px;
-    padding: 10px; 
-    font-size: x-large;
-    
+.header{
+    display: flex;
+    height: 100px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.cabecera{
+    color: white;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    text-align: center;
 }
 body {
-    background-image: url("https://th.bing.com/th/id/R.1669e261b9e3f2d37be7d8e70a8801e3?rik=1Dthy49YIuva9g&pid=ImgRaw&r=0");
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position:center ;
+    background: rgb(143,143,147);
+background: linear-gradient(90deg, rgba(143,143,147,1) 0%, rgba(119,117,117,1) 50%, rgba(167,166,175,1) 100%);
+}
+.classModified{
+    float:left;
 }
 

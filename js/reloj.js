@@ -1,32 +1,11 @@
 
-// agregar();
-
-// console.log(`area: ${area(10)}`);
-// function llamar() {
-//     let input = prompt('Llame');
-//     alert("llamdo" + miArray[input]);
-// }
-
-// import { area, agregar, miArray } from "./asdsad.js";
-
-// function saludar(nombre = "Persona") {
-//     console.log(`Hola ${nombre}`)
-    
-// }
-
-// saludar("William");
-// let saludo = (nombrwe)=>{console.log(`hola ${nombrwe} version 2`)}
-// saludo('William');
 let fecha = new Date();
 console.log(fecha)
-// console.log(fecha.getDay());
-// console.log(fecha.getDate(0));
-// console.log(fecha.getMonth());
-// console.log(fecha.getFullYear());
+
 console.log(fecha.setFullYear(2002))
 let arrayDias = ['Domingo', 'Lunes', 'Martes',' Miercoles', 'Jueves', 'Sabado'];
 let arrayMes = ['Enero', 'Febrero', 'Marzo' , 'abril', 'mayo', 'junio', 'julio', 'agoto', 'septiembre', 'octubre', 'noviembre', 'Diciembre'];
-// console.log(arrayDias[fecha.getDay()]);
+
 
 console.log(arrayMes[fecha.getMonth()]);
 console.log(`${arrayDias[fecha.getDay()]}, ${fecha.getDate()} ${arrayMes[fecha.getMonth()]}  ${fecha.getFullYear()}`);
@@ -37,26 +16,7 @@ console.log(hora.getTime());
 console.log(Date.now());
 console.log(+hora);
 
-// let fechaTimeStamp = new Date(0);
-// console.log(fechaTimeStamp);
-// function saludar(){
-//     console.log(23)
-// }
-// setTimeout(saludar, 10000, );
-
 let nuemro = 5;
-// function nose() {
-//     console.log(`Hoal ${nuemro}`);
-//     --nuemro;
-//     if (nuemro === 0) {
-//         clearInterval(tiempoPlay);
-//     } else if (nuemro == 0){
-//         console.log(`xdxdxdxdxd`);
-
-//     }
-// }
-
-
 let fechaHtml = document.getElementById('fecha');
 let relojaHtml = document.getElementById('reloj');
 let hope = document.getElementById('hope');
