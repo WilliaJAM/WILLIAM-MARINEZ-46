@@ -4,14 +4,15 @@ console.log(frutas);
 function imprimirArray() {
     let input = document.getElementById("123").value
     if(input >=frutas.length){
-        alert(`No mi loco 2`);
+        alert(`No se puede`);
         limpiar();
         
     }if(input < 0){
-        alert(`No mi loco 2`)
+        alert(`No`);
         limpiar();
 
     }else{
+
         alert(frutas[input])
 
     }
@@ -30,7 +31,7 @@ function agregar() {
         frutas.push(newElement);
         console.log(frutas);
     }else{
-        alert(`Nah`)
+        alert(`Agregar un elemento los espacios no son permitidos`);
         
     }
 }
