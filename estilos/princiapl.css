@@ -3,35 +3,41 @@ border: 1px solid;
 border-radius: 8px;
 margin: 50px auto;
 width: 900px;
+background: rgb(186, 186, 186);
+
 }
 #tituloPaginaPrincipal{
     text-align: center;
 }
 .cards {
-    border: 1px solid;
     margin: 20px auto;
-    margin: 20px;
+    margin: 25px;
     padding: 20px;
+    margin: 15px;
 
 }
 #card1 {
     width: 400px;
     display: inline-block;
+    margin: 5px;
 
 }
 #card2 {
     width: 400px;
     display: inline-block;
+    margin: 5px;
 
 }
 #card3 {
     width: 400px;
     display: inline-block;
+    margin: 5px;
 
 
 }
 #card4 {
         width: 400px;
         display: inline-block;
+        margin: 5px;
 
 }
