@@ -1,0 +1,64 @@
+.formulario {
+    border: 1px solid;
+    border-radius: 8px;
+    width: 1000px;
+    margin: 100px auto 300px;
+    padding: 100px;
+    background: rgb(186, 186, 186);
+
+}
+.tittle {
+    text-align: center;
+}
+
+.inputs {
+    padding: 50px;
+}
+
+#selector {
+    margin: 10px;
+    display: inline-block;
+    width: 300px;
+}
+#inputNumeroDocumento{
+    display: inline-block;
+    margin: 10px;   
+    width: 350px;
+}
+#inputNombre{
+    margin: 10px;
+    display: inline-block;
+    width: 300px;
+}
+#inputApellido{
+    margin: 10px;
+    display: inline-block;
+    width: 350px;
+}
+#inputDirrecion{
+    margin: 10px;
+    width: 675px;
+
+}
+#inputTelefono{
+    margin: 10px;
+    display: inline-block;
+    width: 300px;
+}
+#fechaNacimiento{
+    text-align: center;
+    margin: 10px;
+    height: 35px ;
+    width: 350px ;
+
+}
+
+#botones {
+    margin: 0 auto;
+    width: 25%;
+    padding: 1px;
+    
+}
+a{
+    text-decoration: none;
+}

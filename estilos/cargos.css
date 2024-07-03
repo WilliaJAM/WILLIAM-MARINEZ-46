@@ -1,0 +1,26 @@
+.contenido {
+border: 1px solid;
+border-radius: 8px;
+margin: 100px auto 300px;
+width: 700px;
+height: 340px;
+background-color: rgb(186, 186, 186);
+padding: 40px;
+}
+#inputCargo{
+    width: 500px;
+    margin: 25px auto;
+}
+
+#titulo{
+    text-align: center;
+    margin: 20px;
+}
+#botones{
+    margin: 0 auto;
+    width: 190px;
+    padding: 5px;
+}
+div a {
+    text-decoration: none;
+}

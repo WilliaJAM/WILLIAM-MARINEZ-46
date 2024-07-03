@@ -1,0 +1,37 @@
+.contenido {
+border: 1px solid;
+border-radius: 8px;
+margin: 50px auto;
+width: 900px;
+}
+#tituloPaginaPrincipal{
+    text-align: center;
+}
+.cards {
+    border: 1px solid;
+    margin: 20px auto;
+    margin: 20px;
+    padding: 20px;
+
+}
+#card1 {
+    width: 400px;
+    display: inline-block;
+
+}
+#card2 {
+    width: 400px;
+    display: inline-block;
+
+}
+#card3 {
+    width: 400px;
+    display: inline-block;
+
+
+}
+#card4 {
+        width: 400px;
+        display: inline-block;
+
+}

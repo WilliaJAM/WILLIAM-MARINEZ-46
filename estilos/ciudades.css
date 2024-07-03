@@ -1,0 +1,29 @@
+.contenedorCiudades{
+    border-radius: 8px;
+    width: 1000px;
+    margin: 100px auto 300px;
+    padding: 120px;
+    background: rgb(186, 186, 186);
+    border: 1px solid;
+
+}
+.tituloFormulario {
+    text-align: center;
+    margin-top: -80px;
+
+}
+#inputCiudad {
+    margin: 30px;
+    width: 580px;
+    margin: 0 auto 30px;
+    margin-top: 30px;  
+
+}
+#botones {
+    margin: 0 auto;
+    width:180px;
+    padding: 2px;
+}
+div a {
+text-decoration: none;
+}

@@ -1,0 +1,28 @@
+.contenidoDelFormulario{
+    border: 1px solid;
+    border-radius: 8px;
+    margin: 200px auto;
+    width: 700px;
+    height: 400px;
+    background: rgb(186, 186, 186);
+    padding: 80px;
+}
+.deportes{
+    text-align: center;
+    margin: 20px;
+    
+}
+#inputDeporte {
+    margin: 20px auto;
+    width: 500px;
+
+}
+#botones{
+    margin: 0 auto;
+    width: 190px;
+    padding: 6px;
+}
+
+div a {
+    text-decoration: none;
+}
