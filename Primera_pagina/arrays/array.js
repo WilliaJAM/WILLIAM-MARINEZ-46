@@ -3,13 +3,14 @@ console.log(frutas);
 
 function imprimirArray() {
     let input = document.getElementById("123").value
+    console.log(localStorage.getItem("arreglo"));
     if(input >=frutas.length){
         alert(`No se puede`);
-        limpiar();
+        limpiar("123");
         
     }if(input < 0){
         alert(`No`);
-        limpiar();
+        limpiar("123");
 
     }else{
 
@@ -17,19 +18,20 @@ function imprimirArray() {
 
     }
 }
-function limpiar() {
-    document.getElementById("123").value=''
-    document.getElementById("123").focus() //no pierde el cursor osea no se tiene que volver a clikear el input se selecciona auto (cositas para una 
+function limpiar(id) {
+    document.getElementById(id).value=''
+    document.getElementById(id).focus() //no pierde el cursor osea no se tiene que volver a clikear el input se selecciona auto (cositas para una 
     //experincia de usuario god)
 
 }
 function agregar() {
     let newElement = document.getElementById('newElement').value
     newElement = newElement.trim();
-    if (newElement.trim() !== '') {
+    if (newElement !== '') {
         alert(`Elemento agrergado`);
         frutas.push(newElement);
-        console.log(frutas);
+        guardar(frutas);
+        console.log();
     }else{
         alert(`Agregar un elemento los espacios no son permitidos`);
         
@@ -43,9 +45,13 @@ function eliminar() {
     }else{
 
         frutas.splice(newElement , 1); //tener encuenta como se hace, asi se debe usar splice sirve para eliminar elementos de un arreglo , se podra aplicar en objetos almacenados en 
-        //un array?
+        //un array? 
         console.log(frutas);
         alert(`Elementos que estan en el arreglo ${frutas}`);
     }
 
+}
+function guardar(algoRamdon) {
+    localStorage.setItem("arreglo", algoRamdon);
+    console.log("guardado en storage");
 }
