@@ -1,0 +1,19 @@
+body{
+background-color: white;
+}
+#titulo {
+    text-align: center;
+    color: black;
+}
+.contenido{
+    border: 1px solid;
+    border-radius: 8px;
+    margin: 200px auto;
+    width: 800px;
+    height: 400px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+fieldset{
+    text-align: center;
+}
