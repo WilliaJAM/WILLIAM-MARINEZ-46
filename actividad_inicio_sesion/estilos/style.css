@@ -1,26 +1,33 @@
 .contenedor {
-    height: 70vh;
-    margin: 5%;
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    width: 400px;
+    height: 400px;
+    margin: 200px auto;
+    padding: 50px;
 }
-#floatingInput1 {
+#input1 {
     height: 40px;
     width: 300px;
+    margin: 45px auto;
+
+
 }
-#floatingPassword2 {
+#input2{
     height: 40px;
     width: 300px;
+    margin: 45px auto;
 }
 body {
-    background-image: url('/assets/R.gif');
+    background-image: url('/pagina_ejersicios/assets/R.gif');
     background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+#boton{
+    margin: 75px;
+    width: 150px;
+
 }
 footer{
     text-align: center;
