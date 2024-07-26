@@ -1,21 +1,47 @@
 
-let dataBase = "admin"
-let asd = "123"
+// let dataBase = "admin"
+// let asd = "123"
+let baseDeDatos = [
+    {"nombre" : "admin" , "pw":123 ,"edad": 12},
+    {"nombre" : "William" ,"pw":789 , "edad":23 },
+    {"nombre" : "Otro" , "pw":456 , "edad": 18}
+]
 
-function logIn() {
+// function logIn() {
+//     let username = document.getElementById("floatingInput1").value
+//     let password = document.getElementById("floatingPassword2").value
+//     if(dataBase == username && password == asd){
+//         guardar(username);
+//         window.open('/pagina_ejersicios/main.html', '_self');
+//         document.getElementById("username").value = '';
+//         document.getElementById("inputPassword2").value = '';
+//         //aqui solo llama la variable con el valor de 3 y ejecutará el alert.
+//     }else if( localStorage.getItem("intentos") == 3){
+//         alert(`Cuenta bloqueada`);
+//     }else {
+//         alert(`Error credneciales invalidas`);
+
+//         contador1();
+//     }
+
+// }
+function funcionBaseDeDatos() {
     let username = document.getElementById("floatingInput1").value
     let password = document.getElementById("floatingPassword2").value
-    if(dataBase == username && password == asd){
+    //devolvera un booleano cuando evalue la expresion.
+    let eserLogin = baseDeDatos.some(usuario => usuario.nombre == username && usuario.pw == password);
+    //la variable eserLogin se convertira en un true o false.
+    console.log(eserLogin);
+    // se puede evaluar dentro de una condicional para seguir con el flujo normal.
+    if(eserLogin == true) {
         guardar(username);
         window.open('/pagina_ejersicios/main.html', '_self');
         document.getElementById("username").value = '';
         document.getElementById("inputPassword2").value = '';
-        //aqui solo llama la variable con el valor de 3 y ejecutará el alert.
     }else if( localStorage.getItem("intentos") == 3){
-        alert(`Cuenta bloqueada`);
-    }else {
+        lert(`Cuenta bloqueada`);
+    }else{
         alert(`Error credneciales invalidas`);
-
         contador1();
     }
 

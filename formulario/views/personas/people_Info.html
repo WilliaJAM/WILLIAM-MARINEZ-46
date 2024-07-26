@@ -41,28 +41,29 @@
         <div class="inputs">
             <select class="form-select" aria-label="Default select example" id="selector" class="inputs">
                 <option selected>Tipo de documento</option>
-                <option value="1">Cédula de ciudadanía</option>
-                <option value="2">Tarjeta de Indentidad</option>
-                <option value="3">Cédula de extrajeria</option>
-                <option value="4">PEP</option>
+                <option value="Cedula">Cédula de ciudadanía</option>
+                <option value="Tarjeta">Tarjeta de Indentidad</option>
+                <option value="Extrajero">Cédula de extrajeria</option>
+                <option value="PEP">PEP</option>
             </select> 
                         <input class="form-control" type="text" placeholder="Número de documento" aria-label="default input example" id="inputNumeroDocumento">
                         <input class="form-control" type="text" placeholder="Ingrese su Nombre" aria-label="default input example" id="inputNombre">
                         <input class="form-control" type="text" placeholder="Ingrese su Apellido" aria-label="default input example" id="inputApellido">
-                        <input class="form-control" type="text" placeholder="Ingrese su Dirección" aria-label="default input example" id="inputDirrecion">
+                        <input class="form-control" type="text" placeholder="Ingrese su E-mail" aria-label="default input example" id="inputDirrecion">
                         <input class="form-control" type="text" placeholder="Ingrese su Teléfono" aria-label="default input example" id="inputTelefono">
                         <input type="date" name="fecha" id="fechaNacimiento">
                     </div>        
         <div id="botones">
-            <a href="/index.html">
+            <a href="/formulario/formulario.html">
                 <button type="button" class="btn btn-danger" >Cancelar</button>
             </a>
-            <a href="/formulario/formulario.html">
-                <button type="button" class="btn btn-success">Guardar</button>
+            <a>
+                <button type="button" class="btn btn-success" onclick="guardarDatos()">Guardar</button>
             </a>
         </div>
     </div>
 </body>
+<script src="/formulario/js/datosPersona.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </html>

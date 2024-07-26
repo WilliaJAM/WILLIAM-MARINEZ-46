@@ -24,7 +24,7 @@ let fechaJs = new Date ();
 let arrayDia = ['Domingo', 'Lunes', 'Martes',' Miercoles', 'Jueves','Viernes', 'Sabado']
 
 
-let arrayMeses = ['Enero', 'Febrero', 'Marzo' , 'abril', 'mayo', 'junio', 'julio', 'agoto', 'septiembre', 'octubre', 'noviembre', 'Diciembre'];
+let arrayMeses = ['Enero', 'Febrero', 'Marzo' , 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'Diciembre'];
 
 
 fechaHtml.innerHTML = `${arrayDia[fechaJs.getDay()]} ${fechaJs.getDate()} de ${arrayMeses[fechaJs.getMonth()]} ${fechaJs.getFullYear()}`
