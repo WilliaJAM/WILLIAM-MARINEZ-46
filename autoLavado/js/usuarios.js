@@ -22,4 +22,3 @@ function registrar() {
 
     localStorage.setItem('usuarios', JSON.stringify(usuarios))
 }
-

@@ -8,14 +8,24 @@ let servicios = [
     {"servicio" : "Servicio Completo", "precio": 250000 },
     {"servicio" : "Cambio aceite", "precio": 45000 }
 ]
+//____________________________________________
+// const precioManoBra = parseInt(document.getElementById('precioManoBra').value)
+// const precioRpuesto = parseInt(document.getElementById('precioRepuesto').value)
+// const selectServicio= parseInt(document.getElementById('servicioAplicado').value);
+// const tipoCliente = document.getElementById('selectorTipoCliente').value;
+// let factura = {
+//     nombre : 
+//     tipoCliente : tipoCliente,
+// }
 
+const selecTipoCliente = document.getElementById('selectorTipoCliente');
+const servicio = document.getElementById('servicioAplicado');
 //foreach itera sobre un array (esta funcion crea opciones del select del html)
 usuariosArray.forEach(element => {
-    const selecTipoCliente = document.getElementById('selectorTipoCliente');
 
     const option = document.createElement('option');
-    //esta linea de codigo crea el value del optio
-    element.value = element.tipoCliente
+    //esta linea de codigo crea el value del option
+    option.value = element.tipoCliente
     //esto es solo donde esta <option>Texto (por eso .text)</option>
     option.text = `${element.nombre} ${element.apellido}`;
     //append child agrega esa opcion dentro del select
@@ -29,7 +39,7 @@ servicios.forEach(element => {
 
     const option = document.createElement('option');
     //esta linea de codigo crea el value del option
-    element.value = element.precio
+    option.value = element.precio
     //esto es solo donde esta <option>Texto (por eso .text)</option>
     option.text = element.servicio;
     //append child agrega esa opcion dentro del select
@@ -41,12 +51,17 @@ servicios.forEach(element => {
 
 function calcularTotla() {
     
-    const precioManoBra = document.getElementById('precioManoBra').value
-    const precioRpuesto = document.getElementById('precioRepuesto').value
-    const selectServicio= document.getElementById('servicioAplicado').value;
-
-    console.log(selecTipoCliente)
-    console.log(selectServicio);
-
+    const precioManoBra = parseInt(document.getElementById('precioManoBra').value)
+    const precioRpuesto = parseInt(document.getElementById('precioRepuesto').value)
+    const selectServicio= parseInt(document.getElementById('servicioAplicado').value);
+    const tipoCliente = document.getElementById('selectorTipoCliente').value;
+    
+if(tipoCliente == "preferencial"){
+    let cobro = (precioManoBra + precioRpuesto + selectServicio)* 0.9;
+    console.log(cobro);
+}else{
+    let cobro = precioManoBra + precioRpuesto + selectServicio;
+    
+}
 
 }

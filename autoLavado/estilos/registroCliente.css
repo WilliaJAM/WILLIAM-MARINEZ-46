@@ -1,0 +1,59 @@
+.formularioDeRegistroCliente{
+    background-color: rgba(00, 000, 000, 0.2);
+    margin : 0 auto;
+    width: 700px;
+    border-radius: 8px;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+
+.nombre{
+    width: 500px;
+    margin: 30px auto;
+}
+.apellido{
+    width: 500px;
+    margin: 30px auto;
+}
+.telefono{
+    width: 500px;
+    margin: 30px auto;
+}
+.cedula{
+    width: 500px;
+    margin: 30px auto;
+}
+.placa{
+    width: 500px;
+    margin: 30px auto;
+}
+.selector{
+    width: 500px;
+    margin: 30px auto;
+}
+.boton{
+    margin: 0 auto;
+    width: 90px;
+    padding: 6px;
+
+}
+.navegacion{
+width: 300px;
+padding: 10px;
+margin: 0 auto;
+background-color: rgba(00, 000, 000, 0.2);
+border-bottom-left-radius: 8px;
+border-bottom-right-radius:8px ;
+}
+#boton1{
+width: 90px;
+margin-left: 30px;
+}
+#boton2{
+margin-left: 30px;
+}
+.contenido{
+    background-color: rgb(159, 194, 228);
+}

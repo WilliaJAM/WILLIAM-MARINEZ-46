@@ -1,0 +1,59 @@
+.contenidoFacturacion{
+    background-color: rgba(00, 000, 000, 0.2);
+    margin : 0 auto;
+    width: 1000px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
+.cliente{
+    width: 500px;
+    margin: 30px auto;
+}
+.servicio{
+    width: 500px;
+margin: 30px auto ;
+}
+.input1{
+    width: 500px;
+margin: 30px auto;
+}
+.input2{
+    width: 500px;
+margin: 30px auto;
+}
+.descripcion1{
+    width: 500px;
+    margin: 30px auto;
+}
+.descripcion2{
+    width: 500px;
+    margin: 30px auto;
+}
+.button{
+    margin: 0 auto;
+    width: 150px;
+    padding: 6px;
+
+}
+.navegacion{
+    width: 300px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: rgba(00, 000, 000, 0.2);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius:8px ;
+    }
+    #boton1{
+    width: 90px;
+    margin-left: 30px;
+    }
+    #boton2{
+    margin-left: 30px;
+    }
+.contenido{
+    background-color: rgb(159, 194, 228);
+}
