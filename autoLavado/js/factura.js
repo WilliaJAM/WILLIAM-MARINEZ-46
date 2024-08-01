@@ -1,5 +1,5 @@
 
-let usuariosArray = JSON.parse(localStorage.getItem('usuarios')) || [];
+let usuariosArray = JSON.parse(localStorage.getItem('usuarios'));
 
 let servicios = [
     {"servicio" : "Lavado General", "precio": 20000},
@@ -9,14 +9,6 @@ let servicios = [
     {"servicio" : "Cambio aceite", "precio": 45000 }
 ]
 //____________________________________________
-// const precioManoBra = parseInt(document.getElementById('precioManoBra').value)
-// const precioRpuesto = parseInt(document.getElementById('precioRepuesto').value)
-// const selectServicio= parseInt(document.getElementById('servicioAplicado').value);
-// const tipoCliente = document.getElementById('selectorTipoCliente').value;
-// let factura = {
-//     nombre : 
-//     tipoCliente : tipoCliente,
-// }
 
 const selecTipoCliente = document.getElementById('selectorTipoCliente');
 const servicio = document.getElementById('servicioAplicado');
@@ -61,7 +53,37 @@ if(tipoCliente == "preferencial"){
     console.log(cobro);
 }else{
     let cobro = precioManoBra + precioRpuesto + selectServicio;
+    console.log(cobro);
     
 }
-
 }
+
+
+function factura() {
+    const precioManoBra = parseInt(document.getElementById('precioManoBra').value)
+    const precioRpuesto = parseInt(document.getElementById('precioRepuesto').value)
+    const selectServicio= parseInt(document.getElementById('servicioAplicado').value);
+    const tipoCliente = document.getElementById('selectorTipoCliente').value;
+    
+    
+    let factura = {
+        // nombre : nombre,
+        // apellido : apellido,
+        // telefono : telefono,
+        // cedula : cedula,
+        tipoCliente : tipoCliente,
+        servicio : [
+            { precioManoBra: precioManoBra},
+            {precioRpuesto : precioRpuesto},
+            {selectServicio : selectServicio}
+        ]
+    }
+    let facturacion = JSON.parse(localStorage.getItem('factura')) || []
+
+    facturacion.push(factura);
+    
+    alert(`Datos registrados`);
+
+    localStorage.setItem('factura', JSON.stringify(facturacion))
+}
+a
